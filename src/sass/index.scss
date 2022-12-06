@@ -1,0 +1,258 @@
+.homecontainer{
+    width: 100%;
+    height: 100vh;
+    background-color: #CCEFF1;
+    .title{
+        width: 100%;
+        height: 25vh;
+        // border: 1px solid blue;
+        border-bottom:2px solid #0B5ED7;
+
+    }
+    .options{
+        width: 100%;
+        height: 75vh;
+        // border: 1px solid red;
+    }
+}
+
+.quiz {
+    width: 975px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  
+  .question {
+    background-color: #0094da;
+    color: white;
+    padding: 10px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  
+  .results {
+    background-color: #fff;
+    height: 300px;
+    text-align: center;
+  }
+  
+  .congratulations {
+    background-color: #0094da;
+    padding: 20px;
+    font-size: 36px;
+    color: #fff;
+  }
+  
+  .results-info {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  
+  .answer {
+    width: 48%;
+    background: #fff;
+    border: 2px solid #0094da;
+    min-height: 70px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    display: flex;
+  }
+  
+  .answers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .answer-letter {
+    font-size: 30px;
+    background-color: #0084da;
+    color: #fff;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .answer-text {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .correct-answer {
+    border: 2px solid #1ea55b;
+  }
+  
+  .correct-answer .answer-letter {
+    background: #1ea55b;
+  }
+  
+  .wrong-answer {
+    border: 2px solid #dc0a0a;
+  }
+  
+  .wrong-answer .answer-letter {
+    background: #dc0a0a;
+  }
+  
+  .next-button {
+    margin: 0 auto;
+    color: #fff;
+    background: #0b0e21;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 75px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .score {
+    background: #fff;
+    color: 000;
+    font-size: 18px;
+    width: 200px;
+    margin: 0 auto;
+    font-weight: 600;
+    height: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .disabled-answer {
+    pointer-events: none;
+  }
+
+  .game {
+    width: 800px;
+    height: 200px;
+    // border: 1px solid black;
+    border-bottom: 3px solid green;
+    margin: auto;
+  }
+  
+  #dino {
+    width: 50px;
+    // height: 50px;
+   
+    // background-image: url('https://raw.githubusercontent.com/mdbootstrap/knowledge-base/main/JS/games/dino-game/img/trex.png');
+    // background-image: url('https://www.pngitem.com/pimgs/m/400-4006646_easter-bunny-running-rabbit-to-the-end-free.png');
+    background-image: url('../images/rabbit.png');
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+    animation: jump 5s linear infinite;
+    // animation: jump2 5s linear infinite;
+    
+  }
+  .jump {
+    animation: jump 0.3s linear ;
+  }
+  @keyframes jump{
+    0%{
+      left: 0px;
+      top: 150px;
+    }
+    10%{
+      top: 90px;
+    }
+    20%{
+      top: 150px;
+    }
+    30%{
+      top: 90px;
+    }
+    40%{
+      top: 150px;
+    }
+    50%{
+      top: 90px;
+    }
+    60%{
+      top: 150px;
+    }
+    70%{
+      top: 90px;
+    }
+    80%{
+      top: 150px;
+    }
+    90%{
+      top: 90px;
+    }
+    100%{
+      left: 750px;
+    }
+  }
+  @keyframes jump2{
+    0%{
+      top: 130px;
+    }
+    20%{
+      top: 150px;
+    }
+    100%{
+      top: 0px;
+    }
+  }
+  // @keyframes jump {
+  //   0% {
+  //     top: 150px;
+  //     left: 20px;
+  //   }
+  
+  //   30% {
+  //     left: 20px;
+  //     top: 130px;
+  //   }
+  
+  //   50% {
+  //     left: 40px;
+  //     top: 80px;
+  //   }
+  
+  //   80% {
+  //     left: 60px;
+  //     top: 130px;
+  //   }
+  
+  //   100% {
+  //     left: 80px;
+  //     top: 150px;
+  //   }
+    
+    
+  // }
+  
+  // #cactus {
+  //   width: 20px;
+  //   height: 40px;
+  //   position: relative;
+  //   top: 110px;
+  //   left: 580px;
+  
+  //   background-image: url("https://raw.githubusercontent.com/mdbootstrap/knowledge-base/main/JS/games/dino-game/img/cactus.png");
+  //   background-size: 20px 40px;
+  
+  //   animation: block 1s infinite linear;
+  // }
+  
+  // @keyframes block {
+  //   0% {
+  //     left: 580px;
+  //   }
+  
+  //   100% {
+  //     left: -20px;
+  //   }
+  // }
